@@ -96,24 +96,39 @@
                                     <action selector="reproducirTapped:" destination="B6a-xy-alh" eventType="touchUpInside" id="HUw-Kv-ffY"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duracion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wx5-5x-bxf">
+                                <rect key="frame" x="172.5" y="442" width="69" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="aPw-FE-UgV">
+                                <rect key="frame" x="18" y="503" width="378" height="31"/>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5Q7-L0-7Rd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="UUA-nv-fRf" firstAttribute="top" secondItem="xDS-Cq-65I" secondAttribute="bottom" constant="20" id="40S-ZP-JZp"/>
+                            <constraint firstItem="aPw-FE-UgV" firstAttribute="leading" secondItem="5Q7-L0-7Rd" secondAttribute="leading" constant="20" id="461-AT-0bA"/>
                             <constraint firstItem="xDS-Cq-65I" firstAttribute="top" secondItem="hID-MF-Ce7" secondAttribute="bottom" constant="30" id="5Tv-Mx-oyG"/>
                             <constraint firstItem="hID-MF-Ce7" firstAttribute="centerX" secondItem="74g-sb-GSX" secondAttribute="centerX" id="9Wa-5d-URt"/>
                             <constraint firstItem="xDS-Cq-65I" firstAttribute="centerX" secondItem="74g-sb-GSX" secondAttribute="centerX" id="AJp-1B-Gmw"/>
+                            <constraint firstItem="aPw-FE-UgV" firstAttribute="top" secondItem="wx5-5x-bxf" secondAttribute="bottom" constant="40" id="DyP-Cp-6QW"/>
                             <constraint firstItem="5Q7-L0-7Rd" firstAttribute="trailing" secondItem="UUA-nv-fRf" secondAttribute="trailing" constant="20" id="FSU-Z8-a4Z"/>
                             <constraint firstItem="xDS-Cq-65I" firstAttribute="centerX" secondItem="74g-sb-GSX" secondAttribute="centerX" id="Gnl-1W-r9R"/>
                             <constraint firstItem="cRs-Xe-Sc3" firstAttribute="centerX" secondItem="74g-sb-GSX" secondAttribute="centerX" id="Y3S-zR-XPk"/>
+                            <constraint firstItem="wx5-5x-bxf" firstAttribute="centerX" secondItem="74g-sb-GSX" secondAttribute="centerX" id="YrN-6d-cIN"/>
                             <constraint firstItem="UUA-nv-fRf" firstAttribute="leading" secondItem="5Q7-L0-7Rd" secondAttribute="leading" constant="20" id="Z4k-kJ-Ml8"/>
                             <constraint firstItem="5Q7-L0-7Rd" firstAttribute="trailing" secondItem="hID-MF-Ce7" secondAttribute="trailing" constant="20" id="a0Z-gS-9on"/>
+                            <constraint firstItem="aPw-FE-UgV" firstAttribute="centerX" secondItem="74g-sb-GSX" secondAttribute="centerX" id="a7C-rz-ciH"/>
                             <constraint firstItem="hID-MF-Ce7" firstAttribute="leading" secondItem="5Q7-L0-7Rd" secondAttribute="leading" constant="20" id="bTw-lu-Wga"/>
                             <constraint firstItem="Vbt-WO-UwV" firstAttribute="top" secondItem="5Q7-L0-7Rd" secondAttribute="top" constant="20" id="bo4-Fw-w1d"/>
+                            <constraint firstItem="wx5-5x-bxf" firstAttribute="top" secondItem="cRs-Xe-Sc3" secondAttribute="bottom" constant="30" id="g3s-QY-Pmy"/>
                             <constraint firstItem="hID-MF-Ce7" firstAttribute="top" secondItem="Vbt-WO-UwV" secondAttribute="bottom" constant="20" id="hdK-WS-ucA"/>
                             <constraint firstItem="Vbt-WO-UwV" firstAttribute="centerX" secondItem="74g-sb-GSX" secondAttribute="centerX" id="sKs-vB-2f1"/>
                             <constraint firstItem="xDS-Cq-65I" firstAttribute="leading" secondItem="5Q7-L0-7Rd" secondAttribute="leading" constant="20" id="t9k-zr-Ubc"/>
+                            <constraint firstItem="5Q7-L0-7Rd" firstAttribute="trailing" secondItem="aPw-FE-UgV" secondAttribute="trailing" constant="20" id="tN0-vL-uJd"/>
                             <constraint firstItem="cRs-Xe-Sc3" firstAttribute="top" secondItem="UUA-nv-fRf" secondAttribute="bottom" constant="20" id="td4-ic-CE4"/>
                             <constraint firstItem="UUA-nv-fRf" firstAttribute="centerX" secondItem="74g-sb-GSX" secondAttribute="centerX" id="x6T-aN-saP"/>
                             <constraint firstItem="5Q7-L0-7Rd" firstAttribute="trailing" secondItem="xDS-Cq-65I" secondAttribute="trailing" constant="20" id="ziM-MK-Rsr"/>
@@ -122,9 +137,11 @@
                     <navigationItem key="navigationItem" id="2lq-iu-EPg"/>
                     <connections>
                         <outlet property="agregarButton" destination="cRs-Xe-Sc3" id="IeV-yc-8ha"/>
+                        <outlet property="duracionLabel" destination="wx5-5x-bxf" id="apy-7Y-eLw"/>
                         <outlet property="grabarButton" destination="Vbt-WO-UwV" id="6vH-Mn-cPP"/>
                         <outlet property="nombreTextField" destination="UUA-nv-fRf" id="gGe-ue-ZgJ"/>
                         <outlet property="reproducirButton" destination="hID-MF-Ce7" id="3gH-Ej-35o"/>
+                        <outlet property="volumenSlider" destination="aPw-FE-UgV" id="Rqf-JB-JbL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qoH-1A-x15" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
